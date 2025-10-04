@@ -13,10 +13,9 @@ import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.function.FunctionItemProcessor;
 import org.springframework.batch.item.support.IteratorItemReader;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
-@Configuration
+// para rodar tem que descomentar e comentar o outro Job @Configuration
 public class ParImparBatchConfig {
 
 	@Bean
