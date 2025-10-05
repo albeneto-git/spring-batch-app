@@ -34,20 +34,21 @@ spring-batch-app/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/example/batch/
-│   │   │       ├── config/
-│   │   │       ├── job/
-│   │   │       ├── reader/
-│   │   │       ├── processor/
-│   │   │       ├── writer/
-│   │   │       └── SpringBatchApplication.java
-│   └── resources/
-│       ├── application.yml
-│       └── data/
-│           └── input.csv
-└── README.md
+│   │   │   └── br/com/albeneto/spring_batch_app/
+│   │   │       ├── config/       # Configurações gerais do Spring Batch e beans
+│   │   │       ├── job/          # Definições de jobs e suas sequências
+│   │   │       ├── step/         # Steps que compõem os jobs
+│   │   │       ├── tasklet/      # Implementações de Tasklets personalizados
+│   │   │       └── SpringBatchApp.java  # Classe principal da aplicação
+│   ├── resources/
+│   │   ├── application.yml       # Configurações da aplicação
+│   │   └── data/                 # Arquivos de entrada para processamento
+│   │       └── input.csv
+├── logs/
+│   └── app.log                   # Arquivo de log gerado pela aplicação
+├── pom.xml                       # Gerenciador de dependências Maven
+└── README.md                     # Documentação do projeto
 ```
-
 ---
 
 ### 🚀 Como Executar
